@@ -1,0 +1,405 @@
+pip install dash
+!pip install dash==1.19.0
+!pip install jupyter_dash
+!pip install --upgrade plotly
+Requirement already satisfied: dash in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (1.19.0)
+Requirement already satisfied: Flask>=1.0.4 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (2.0.1)
+Requirement already satisfied: dash-core-components==1.15.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (1.15.0)
+Requirement already satisfied: plotly in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (5.3.1)
+Requirement already satisfied: dash-html-components==1.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (1.1.2)
+Requirement already satisfied: flask-compress in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (0.0.0)
+Requirement already satisfied: dash-table==4.11.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (4.11.2)
+Requirement already satisfied: future in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (0.18.2)
+Requirement already satisfied: dash-renderer==1.9.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash) (1.9.0)
+Requirement already satisfied: itsdangerous>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash) (8.0.1)
+Requirement already satisfied: Jinja2>=3.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash) (3.0.1)
+Requirement already satisfied: Werkzeug>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash) (2.0.1)
+Requirement already satisfied: importlib-metadata in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from click>=7.1.2->Flask>=1.0.4->dash) (4.8.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash) (2.0.1)
+Requirement already satisfied: brotli in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask-compress->dash) (1.0.9)
+Requirement already satisfied: typing-extensions>=3.6.4 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->Flask>=1.0.4->dash) (3.10.0.2)
+Requirement already satisfied: zipp>=0.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->Flask>=1.0.4->dash) (3.5.0)
+Requirement already satisfied: six in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly->dash) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly->dash) (8.0.1)
+Requirement already satisfied: dash==1.19.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (1.19.0)
+Requirement already satisfied: Flask>=1.0.4 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (2.0.1)
+Requirement already satisfied: dash-core-components==1.15.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (1.15.0)
+Requirement already satisfied: plotly in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (5.3.1)
+Requirement already satisfied: dash-html-components==1.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (1.1.2)
+Requirement already satisfied: flask-compress in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (0.0.0)
+Requirement already satisfied: dash-table==4.11.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (4.11.2)
+Requirement already satisfied: future in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (0.18.2)
+Requirement already satisfied: dash-renderer==1.9.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash==1.19.0) (1.9.0)
+Requirement already satisfied: itsdangerous>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash==1.19.0) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash==1.19.0) (8.0.1)
+Requirement already satisfied: Jinja2>=3.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash==1.19.0) (3.0.1)
+Requirement already satisfied: Werkzeug>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Flask>=1.0.4->dash==1.19.0) (2.0.1)
+Requirement already satisfied: importlib-metadata in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from click>=7.1.2->Flask>=1.0.4->dash==1.19.0) (4.8.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Jinja2>=3.0->Flask>=1.0.4->dash==1.19.0) (2.0.1)
+Requirement already satisfied: brotli in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask-compress->dash==1.19.0) (1.0.9)
+Requirement already satisfied: typing-extensions>=3.6.4 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->Flask>=1.0.4->dash==1.19.0) (3.10.0.2)
+Requirement already satisfied: zipp>=0.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->Flask>=1.0.4->dash==1.19.0) (3.5.0)
+Requirement already satisfied: six in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly->dash==1.19.0) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly->dash==1.19.0) (8.0.1)
+Requirement already satisfied: jupyter_dash in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (0.4.0)
+Requirement already satisfied: requests in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (2.26.0)
+Requirement already satisfied: flask in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (2.0.1)
+Requirement already satisfied: dash in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (1.19.0)
+Requirement already satisfied: ipykernel in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (6.4.1)
+Requirement already satisfied: retrying in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (1.3.3)
+Requirement already satisfied: ansi2html in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (0.0.0)
+Requirement already satisfied: ipython in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter_dash) (7.28.0)
+Requirement already satisfied: dash-core-components==1.15.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (1.15.0)
+Requirement already satisfied: plotly in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (5.3.1)
+Requirement already satisfied: dash-html-components==1.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (1.1.2)
+Requirement already satisfied: flask-compress in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (0.0.0)
+Requirement already satisfied: dash-table==4.11.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (4.11.2)
+Requirement already satisfied: future in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (0.18.2)
+Requirement already satisfied: dash-renderer==1.9.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from dash->jupyter_dash) (1.9.0)
+Requirement already satisfied: itsdangerous>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask->jupyter_dash) (2.0.1)
+Requirement already satisfied: click>=7.1.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask->jupyter_dash) (8.0.1)
+Requirement already satisfied: Jinja2>=3.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask->jupyter_dash) (3.0.1)
+Requirement already satisfied: Werkzeug>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask->jupyter_dash) (2.0.1)
+Requirement already satisfied: importlib-metadata in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from click>=7.1.2->flask->jupyter_dash) (4.8.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from Jinja2>=3.0->flask->jupyter_dash) (2.0.1)
+Requirement already satisfied: brotli in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from flask-compress->dash->jupyter_dash) (1.0.9)
+Requirement already satisfied: typing-extensions>=3.6.4 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->flask->jupyter_dash) (3.10.0.2)
+Requirement already satisfied: zipp>=0.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from importlib-metadata->click>=7.1.2->flask->jupyter_dash) (3.5.0)
+Requirement already satisfied: traitlets<6.0,>=4.1.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (5.1.0)
+Requirement already satisfied: ipython-genutils in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (0.2.0)
+Requirement already satisfied: matplotlib-inline<0.2.0,>=0.1.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (0.1.3)
+Requirement already satisfied: debugpy<2.0,>=1.0.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (1.4.1)
+Requirement already satisfied: tornado<7.0,>=4.2 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (6.1)
+Requirement already satisfied: argcomplete>=1.12.3 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (1.12.3)
+Requirement already satisfied: jupyter-client<8.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipykernel->jupyter_dash) (7.0.3)
+Requirement already satisfied: jedi>=0.16 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (0.18.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (3.0.20)
+Requirement already satisfied: pexpect>4.3 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (4.8.0)
+Requirement already satisfied: pickleshare in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (0.7.5)
+Requirement already satisfied: backcall in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (0.2.0)
+Requirement already satisfied: decorator in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (4.4.2)
+Requirement already satisfied: pygments in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (2.10.0)
+Requirement already satisfied: setuptools>=18.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from ipython->jupyter_dash) (58.0.4)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jedi>=0.16->ipython->jupyter_dash) (0.8.2)
+Requirement already satisfied: nest-asyncio>=1.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter-client<8.0->ipykernel->jupyter_dash) (1.5.1)
+Requirement already satisfied: entrypoints in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter-client<8.0->ipykernel->jupyter_dash) (0.3)
+Requirement already satisfied: jupyter-core>=4.6.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter-client<8.0->ipykernel->jupyter_dash) (4.8.1)
+Requirement already satisfied: python-dateutil>=2.1 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter-client<8.0->ipykernel->jupyter_dash) (2.8.2)
+Requirement already satisfied: pyzmq>=13 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from jupyter-client<8.0->ipykernel->jupyter_dash) (22.3.0)
+Requirement already satisfied: ptyprocess>=0.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from pexpect>4.3->ipython->jupyter_dash) (0.7.0)
+Requirement already satisfied: wcwidth in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython->jupyter_dash) (0.2.5)
+Requirement already satisfied: six>=1.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from python-dateutil>=2.1->jupyter-client<8.0->ipykernel->jupyter_dash) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly->dash->jupyter_dash) (8.0.1)
+Requirement already satisfied: certifi>=2017.4.17 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from requests->jupyter_dash) (2021.5.30)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from requests->jupyter_dash) (1.26.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from requests->jupyter_dash) (3.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from requests->jupyter_dash) (2.0.0)
+Requirement already satisfied: plotly in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (5.3.1)
+Requirement already satisfied: six in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly) (1.16.0)
+Requirement already satisfied: tenacity>=6.2.0 in /home/jupyterlab/conda/envs/python/lib/python3.7/site-packages (from plotly) (8.0.1)
+from jupyter_dash.comms import _send_jupyter_config_comm_request
+_send_jupyter_config_comm_request()
+import pandas as pd
+import dash
+import dash_html_components as html
+import dash_core_components as dcc
+from dash.dependencies import Input, Output
+from jupyter_dash import JupyterDash
+import plotly.graph_objects as go
+!pip list
+Package                         Version
+------------------------------- ---------
+absl-py                         0.14.0
+ansi2html                       0.0.0
+argcomplete                     1.12.3
+argon2-cffi                     21.1.0
+astor                           0.8.1
+attrs                           21.2.0
+autobahn                        21.3.1
+Automat                         20.2.0
+backcall                        0.2.0
+backports.functools-lru-cache   1.6.4
+basemap                         1.2.0
+bleach                          4.1.0
+boto3                           1.7.62
+botocore                        1.10.84
+branca                          0.4.2
+Brotli                          1.0.9
+brotlipy                        0.7.0
+certifi                         2021.5.30
+cffi                            1.14.6
+chardet                         4.0.0
+charset-normalizer              2.0.0
+click                           8.0.1
+cloudpickle                     2.0.0
+colorama                        0.4.4
+constantly                      15.1.0
+contextlib2                     21.6.0
+cryptography                    3.4.7
+cycler                          0.10.0
+Cython                          0.29.24
+cytoolz                         0.11.0
+dash                            1.19.0
+dash-core-components            1.15.0
+dash-html-components            1.1.2
+dash-renderer                   1.9.0
+dash-table                      4.11.2
+dask                            2021.9.1
+dataclasses                     0.8
+debugpy                         1.4.1
+decorator                       4.4.2
+defusedxml                      0.7.1
+docutils                        0.17.1
+entrypoints                     0.3
+Flask                           2.0.1
+Flask-Compress                  0.0.0
+folium                          0.5.0
+fsspec                          2021.9.0
+future                          0.18.2
+gast                            0.5.0
+google-pasta                    0.2.0
+grpcio                          1.38.1
+h5py                            2.8.0
+hyperlink                       21.0.0
+ibm-cos-sdk                     2.0.1
+ibm-cos-sdk-core                2.10.0
+ibm-cos-sdk-s3transfer          2.10.0
+ibm-db                          3.0.4
+ibm-db-sa                       0.3.3
+idna                            3.1
+imagecodecs-lite                2019.12.3
+imageio                         2.4.1
+importlib-metadata              4.8.1
+imutils                         0.5.4
+incremental                     21.3.0
+ipykernel                       6.4.1
+ipython                         7.28.0
+ipython-genutils                0.2.0
+ipython-sql                     0.3.9
+ipywidgets                      7.4.2
+itsdangerous                    2.0.1
+jedi                            0.18.0
+jeepney                         0.7.1
+Jinja2                          3.0.1
+jmespath                        0.10.0
+jsonschema                      3.2.0
+jupyter                         1.0.0
+jupyter-client                  7.0.3
+jupyter-console                 6.4.0
+jupyter-core                    4.8.1
+jupyter-dash                    0.4.0
+jupyterlab-pygments             0.1.2
+Keras                           2.1.6
+Keras-Applications              1.0.8
+Keras-Preprocessing             1.1.2
+keyring                         23.2.1
+kiwisolver                      1.3.2
+libarchive-c                    2.8
+locket                          0.2.0
+lxml                            4.6.3
+Markdown                        3.3.4
+MarkupSafe                      2.0.1
+matplotlib                      3.4.3
+matplotlib-inline               0.1.3
+mistune                         0.8.4
+nbclient                        0.5.4
+nbconvert                       6.2.0
+nbformat                        5.1.3
+nest-asyncio                    1.5.1
+networkx                        2.6.3
+notebook                        6.4.4
+numpy                           1.21.2
+olefile                         0.46
+packaging                       21.0
+pandas                          1.3.3
+pandocfilters                   1.5.0
+parso                           0.8.2
+partd                           1.2.0
+patsy                           0.5.2
+pexpect                         4.8.0
+pickleshare                     0.7.5
+Pillow                          8.1.0
+pip                             21.2.4
+pkginfo                         1.7.1
+plotly                          5.3.1
+prettytable                     2.2.1
+prometheus-client               0.11.0
+prompt-toolkit                  3.0.20
+protobuf                        3.18.0
+ptyprocess                      0.7.0
+pyasn1                          0.4.8
+pyasn1-modules                  0.2.8
+pycocotools                     2.0.2
+pycparser                       2.20
+pydotplus                       2.0.2
+Pygments                        2.10.0
+pyOpenSSL                       20.0.1
+pyparsing                       2.4.7
+pyproj                          1.9.6
+pyrsistent                      0.18.0
+pyshp                           2.1.3
+PySocks                         1.7.1
+python-dateutil                 2.8.2
+pytz                            2021.1
+PyWavelets                      1.1.1
+PyYAML                          5.4.1
+pyzmq                           22.3.0
+qtconsole                       5.1.1
+QtPy                            1.11.2
+readme-renderer                 29.0
+requests                        2.26.0
+requests-toolbelt               0.9.1
+retrying                        1.3.3
+rfc3986                         1.5.0
+s3transfer                      0.1.13
+scikit-image                    0.17.2
+scikit-learn                    0.20.1
+scipy                           1.7.1
+seaborn                         0.9.0
+SecretStorage                   3.3.1
+Send2Trash                      1.8.0
+service-identity                21.1.0
+setuptools                      58.0.4
+six                             1.16.0
+skillsnetwork                   0.15.1
+SQLAlchemy                      1.3.9
+sqlparse                        0.4.2
+statsmodels                     0.12.0
+systemml                        1.2.0
+tenacity                        8.0.1
+tensorboard                     1.14.0
+tensorflow                      1.14.0
+tensorflow-estimator            1.14.0
+tensorflow-object-detection-api 0.1.1
+termcolor                       1.1.0
+terminado                       0.12.1
+testpath                        0.5.0
+tifffile                        2020.6.3
+toolz                           0.11.1
+torch                           1.5.0
+torchvision                     0.2.1
+tornado                         6.1
+tqdm                            4.60.0
+traitlets                       5.1.0
+twine                           3.4.2
+Twisted                         21.7.0
+txaio                           21.2.1
+typing-extensions               3.10.0.2
+urllib3                         1.26.7
+watson-developer-cloud          1.4.1
+wcwidth                         0.2.5
+webencodings                    0.5.1
+Werkzeug                        2.0.1
+wget                            3.2
+wheel                           0.37.0
+widgetsnbextension              3.4.2
+wrapt                           1.12.1
+xlrd                            1.2.0
+zipp                            3.5.0
+zope.interface                  5.4.0
+# !jupyter labextension list
+# notebook hangs if I run the following command 
+JupyterDash.infer_jupyter_proxy_config()
+# needs to be run again in a separate cell due to a jupyterdash bug
+JupyterDash.infer_jupyter_proxy_config()
+spacex_df = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/datasets/spacex_launch_dash.csv')
+# skeleton Dash app to be completed in this lab, downloaded from:
+# https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/module_3/spacex_dash_app.py
+# redundant lines commented out
+
+# Import required libraries
+# import pandas as pd
+# import dash
+# import dash_html_components as html
+# import dash_core_components as dcc
+# from dash.dependencies import Input, Output
+import plotly.express as px
+
+# Read the airline data into pandas dataframe
+# spacex_df = pd.read_csv("spacex_launch_dash.csv")
+max_payload = spacex_df['Payload Mass (kg)'].max()
+min_payload = spacex_df['Payload Mass (kg)'].min()
+
+# Create a dash application
+# app = dash.Dash(__name__) # commented out as we are using JupyterDash instead of dash.Dash
+app = JupyterDash(__name__)
+
+# Create an app layout
+app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
+                                        style={'textAlign': 'center', 'color': '#503D36',
+                                               'font-size': 40}),
+                                # TASK 1: Add a dropdown list to enable Launch Site selection
+                                # The default select value is for ALL sites
+                                # dcc.Dropdown(id='site-dropdown',...)
+                                dcc.Dropdown(id='site-dropdown',
+                                             options=[
+                                                     {'label': 'All Sites', 'value': 'ALL'},
+                                                     {'label': 'CCAFS LC-40', 'value': 'CCAFS LC-40'},
+                                                     {'label': 'VAFB SLC-4E', 'value': 'VAFB SLC-4E'},
+                                                     {'label': 'KSC LC-39A', 'value': 'KSC LC-39A'},
+                                                     {'label': 'CCAFS SLC-40', 'value': 'CCAFS SLC-40'}
+                                                     ],
+                                             value='ALL',
+                                             placeholder='Select a Launch Site here',
+                                             searchable=True
+                                             # style={'width':'80%','padding':'3px','font-size':'20px','text-align-last':'center'}
+                                             ),
+                                html.Br(),
+
+                                # TASK 2: Add a pie chart to show the total successful launches count for all sites
+                                # If a specific launch site was selected, show the Success vs. Failed counts for the site
+                                html.Div(dcc.Graph(id='success-pie-chart')),
+                                html.Br(),
+
+                                html.P("Payload range (Kg):"),
+                                # TASK 3: Add a slider to select payload range
+                                #dcc.RangeSlider(id='payload-slider',...)
+                                dcc.RangeSlider(id='payload-slider',
+                                                min=0,
+                                                max=10000,
+                                                step=1000,
+                                                value=[min_payload, max_payload]
+                                                ),
+
+                                # TASK 4: Add a scatter chart to show the correlation between payload and launch success
+                                html.Div(dcc.Graph(id='success-payload-scatter-chart')),
+                                ])
+
+# TASK 2:
+# Add a callback function for `site-dropdown` as input, `success-pie-chart` as output
+@app.callback(Output(component_id='success-pie-chart', component_property='figure'),
+              Input(component_id='site-dropdown', component_property='value'))
+def get_pie_chart(entered_site):
+    filtered_df = spacex_df
+    if entered_site == 'ALL':
+        fig = px.pie(filtered_df, values='class', 
+        names='Launch Site', 
+        title='Success Count for all launch sites')
+        return fig
+    else:
+        # return the outcomes piechart for a selected site
+        filtered_df=spacex_df[spacex_df['Launch Site']== entered_site]
+        filtered_df=filtered_df.groupby(['Launch Site','class']).size().reset_index(name='class count')
+        fig=px.pie(filtered_df,values='class count',names='class',title=f"Total Success Launches for site {entered_site}")
+        return fig
+
+# TASK 4:
+# Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
+@app.callback(Output(component_id='success-payload-scatter-chart',component_property='figure'),
+                [Input(component_id='site-dropdown',component_property='value'),
+                Input(component_id='payload-slider',component_property='value')])
+def scatter(entered_site,payload):
+    filtered_df = spacex_df[spacex_df['Payload Mass (kg)'].between(payload[0],payload[1])]
+    # thought reusing filtered_df may cause issues, but tried it out of curiosity and it seems to be working fine
+    
+    if entered_site=='ALL':
+        fig=px.scatter(filtered_df,x='Payload Mass (kg)',y='class',color='Booster Version Category',title='Success count on Payload mass for all sites')
+        return fig
+    else:
+        fig=px.scatter(filtered_df[filtered_df['Launch Site']==entered_site],x='Payload Mass (kg)',y='class',color='Booster Version Category',title=f"Success count on Payload mass for site {entered_site}")
+        return fig
+
+# Run the app
+if __name__ == '__main__':
+    app.run_server(mode='inline', host='localhost')
